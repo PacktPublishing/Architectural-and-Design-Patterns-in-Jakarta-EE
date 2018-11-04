@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dVzZwJj8EeiO4doaehRdwg" name="builderPattern">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_drpt8Jj8EeiO4doaehRdwg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_o6PGQJj8EeiO4doaehRdwg" name="JsonObjectBuilder">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kEjUQJj9EeiO4doaehRdwg" name="add">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gvgZIJj_EeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKcxkJj_EeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yv3csJj-EeiO4doaehRdwg" name="addInt">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QJPKcJj_EeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_TsBUsJj_EeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fF3sYJkAEeiO4doaehRdwg" name="addReal">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nelq0JkAEeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_p8t6IJkAEeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tue7kJkAEeiO4doaehRdwg" name="build">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RySrkJkCEeiO4doaehRdwg" type="_RmbMEJj9EeiO4doaehRdwg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_RmbMEJj9EeiO4doaehRdwg" name="JsonObject"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iQ6-AJj-EeiO4doaehRdwg" name="JsonObjectBuilderImpl">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_meS9YJj-EeiO4doaehRdwg" client="_iQ6-AJj-EeiO4doaehRdwg" supplier="_o6PGQJj8EeiO4doaehRdwg" contract="_o6PGQJj8EeiO4doaehRdwg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GAf_4Jj_EeiO4doaehRdwg" name="add">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nwpgoJj_EeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_paLDMJj_EeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JKczYJj_EeiO4doaehRdwg" name="add">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YZU74JkAEeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_apnjgJkAEeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Zjw5QJkBEeiO4doaehRdwg" name="addReal">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_egvJkJkBEeiO4doaehRdwg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gFKwwJkBEeiO4doaehRdwg" name="value">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_h7-hYJkBEeiO4doaehRdwg" name="build" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WDy9AJkCEeiO4doaehRdwg" type="_RmbMEJj9EeiO4doaehRdwg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_E15RIJkDEeiO4doaehRdwg" name="JsonNumber"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_OIFOMJkDEeiO4doaehRdwg" client="_dVzZwJj8EeiO4doaehRdwg" supplier="_E15RIJkDEeiO4doaehRdwg"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_QFZPcJkDEeiO4doaehRdwg" name="JsonString"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_d-r6gJkDEeiO4doaehRdwg" client="_RmbMEJj9EeiO4doaehRdwg" supplier="_QFZPcJkDEeiO4doaehRdwg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_lNTdUJkDEeiO4doaehRdwg" client="_RmbMEJj9EeiO4doaehRdwg" supplier="_dVzZwJj8EeiO4doaehRdwg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7FLvkJkDEeiO4doaehRdwg" name="build" visibility="private" memberEnd="_7FNkwZkDEeiO4doaehRdwg _7FOy4ZkDEeiO4doaehRdwg" navigableOwnedEnd="_7FNkwZkDEeiO4doaehRdwg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7FM9sJkDEeiO4doaehRdwg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7FNkwJkDEeiO4doaehRdwg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7FOy4ZkDEeiO4doaehRdwg" name="jsonobjectbuilderimpl" type="_iQ6-AJj-EeiO4doaehRdwg" association="_7FLvkJkDEeiO4doaehRdwg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7FNkwZkDEeiO4doaehRdwg" name="jsonobject" type="_RmbMEJj9EeiO4doaehRdwg" association="_7FLvkJkDEeiO4doaehRdwg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FOL0JkDEeiO4doaehRdwg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FOy4JkDEeiO4doaehRdwg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_VnyEgJkEEeiO4doaehRdwg" name="JsonArray"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_gBLhQJkEEeiO4doaehRdwg" client="_RmbMEJj9EeiO4doaehRdwg" supplier="_VnyEgJkEEeiO4doaehRdwg"/>
+</uml:Model>

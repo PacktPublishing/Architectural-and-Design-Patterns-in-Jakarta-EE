@@ -1,3 +1,3 @@
 # Section 2
 
-- [2.2 Builder Pattern](builder) demos
+- [2.3 Builder Pattern](builder) demos

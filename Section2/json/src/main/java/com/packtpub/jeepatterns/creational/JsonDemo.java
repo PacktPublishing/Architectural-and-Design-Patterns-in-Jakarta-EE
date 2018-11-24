@@ -1,4 +1,4 @@
-package com.packtpub.jeepatterns.builder;
+package com.packtpub.jeepatterns.creational;
 
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -14,16 +14,17 @@ import javax.json.stream.JsonGenerator;
 
 /**
  * Jakarta EE Design Patterns
+ * Creational Patterns using JSON Processing
  *
  * @author Werner Keil
  */
-public class Main {
+public class JsonDemo {
 
 	public static void main(String[] args) {
 		if (args != null && args.length > 0) {
-			new Main().start(args[0]);
+			new JsonDemo().start(args[0]);
 		} else {
-			new Main().start("");
+			new JsonDemo().start("");
 		}
 	}
 
@@ -46,7 +47,7 @@ public class Main {
 		case "q":
 		case "Q":
 			return true;
-		case "1":
+		case "3":
 			builderPatternDemo();
 			return false;
 		default:
@@ -58,9 +59,12 @@ public class Main {
 		System.out.println();
 		System.out.println("----------------------- Jakarta EE Design Patterns -----------------------");
 		System.out.println();
+		System.out.println("Section 2 - Creational Patterns");
+		System.out.println();
 		System.out.println("Choose a pattern to demonstrate or press 'Q' to exit:");
 		System.out.println();
-		System.out.println("1. Builder Pattern");
+		System.out.println("2. Factory Pattern");
+		System.out.println("3. Builder Pattern");
 
 		System.out.println();
 		System.out.println("---------------------------------------------------------------------------");

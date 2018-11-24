@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.packtpub.jeepatterns</groupId>
-	<artifactId>builder</artifactId>
+	<artifactId>json</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jsonp.version>1.1.2</jsonp.version>
+		<jsonp.version>1.1.4</jsonp.version>
 	</properties>
 	<dependencies>
 		<!-- JSON-P API -->
@@ -49,7 +49,7 @@
 						<!-- automatically creates the classpath using all project dependencies, 
 							also adding the project build directory -->
 						<classpath />
-						<argument>com.packtpub.jeepatterns.builder.Main</argument>
+						<argument>com.packtpub.jeepatterns.creational.JsonDemo</argument>
 					</arguments>
 				</configuration>
 			</plugin>

@@ -7,9 +7,11 @@ import java.util.Scanner;
 
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonBuilderFactory;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import javax.json.JsonWriter;
+import javax.json.JsonWriterFactory;
 import javax.json.stream.JsonGenerator;
 
 /**
@@ -69,7 +71,36 @@ public class JsonDemo {
 		System.out.println();
 		System.out.println("---------------------------------------------------------------------------");
 	}
+	/**
+	 * Factory Pattern demo.
+	 */
+	private void factoryPatternDemo() {
+		// Create builders
+		final JsonBuilderFactory builderFactory = Json.createBuilderFactory(null);
+		final JsonObjectBuilder jsonBuilder = builderFactory.createObjectBuilder();
+		final JsonArrayBuilder jsonArrayBuilder = builderFactory.createArrayBuilder();
+		// Create a object model
+		final JsonObject data = jsonBuilder.add("name", "Jason Bourne")
+				.add("profession", "Super Agent")
+				.add("bad-guy", false).add("kills", 1000)
+				.add("phoneNumbers", jsonArrayBuilder.add(jsonBuilder
+						.add("type", "home")
+						.add("number", "123-456-789")))
+				.build();
 
+		// Write model to a stream
+		StringWriter stringWriter = new StringWriter();
+		Map<String, Boolean> config = new HashMap<>();
+	    config.put(JsonGenerator.PRETTY_PRINTING, true);
+	    final JsonWriterFactory writerfactory = Json.createWriterFactory(config);
+	    JsonWriter jsonWriter = writerfactory.createWriter(
+	               stringWriter);
+	    jsonWriter.writeObject(data);
+	    jsonWriter.close();
+		String str = stringWriter.toString();
+		System.out.println(str);
+	}
+	
 	/**
 	 * Build Pattern demo.
 	 */

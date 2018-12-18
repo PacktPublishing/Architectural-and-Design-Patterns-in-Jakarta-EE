@@ -3,12 +3,12 @@ include::../shared-doc/attributes.adoc[]
 = singleton-rs: Helloworld Using JAX-RS (Java API for RESTful Web Services)
 
 [abstract]
-The `singleton-rs` quickstart demonstrates a simple Hello World application, bundled and deployed as a WAR, that uses JAX-RS to say Hello.
+The `singleton-rs` example demonstrates a simple Hello World application, bundled and deployed as a WAR, that uses JAX-RS to say Hello.
 
 
 == What is it?
 
-The `singleton-rs` quickstart demonstrates the use of CDI and JAX-RS in Jakarta EE.
+The `singleton-rs` example demonstrates the use of CDI and JAX-RS in Jakarta EE.
 
 == Access the Application
 

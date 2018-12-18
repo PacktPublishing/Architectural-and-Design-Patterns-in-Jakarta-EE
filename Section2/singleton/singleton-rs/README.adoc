@@ -12,8 +12,8 @@ The `singleton-rs` example demonstrates the use of CDI and EJB annotations with 
 
 The application is deployed to http://localhost:8080/{artifactId}/.
 
-* The Singleton ID example can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/id
+* The Singleton ID demo can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/id
 
-* The _EJB_ Multithreaded example can be viewed by accessing the following URL: http://localhost:8080/{artifactId}/rest/multiejb
+* The _EJB_ Multithreaded demo can be viewed by accessing the following URL: http://localhost:8080/{artifactId}/rest/multiejb
 
-* The _CDI_ MultiThreaded example can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/multicdi
+* The _CDI_ MultiThreaded demo can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/multicdi

@@ -1,5 +1,3 @@
-include::../shared-doc/attributes.adoc[]
-
 = helloworld-singleton: Helloworld Using a Singleton EJB
 :technologies: EJB, Singleton Pattern
 

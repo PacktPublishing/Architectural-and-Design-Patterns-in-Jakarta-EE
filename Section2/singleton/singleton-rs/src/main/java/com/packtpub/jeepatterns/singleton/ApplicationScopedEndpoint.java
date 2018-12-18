@@ -5,13 +5,13 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 /**
- * A Singleton REST service which is able to return a unique ID.
+ * A REST API which returns a unique ID using an Application scoped bean.
  */
 
 @Path("id")
-public class SingletonIdEndpoint {
+public class ApplicationScopedEndpoint {
     @Inject
-    SingletonIdService service;
+    ApplicationScopedService service;
 
     @GET
     public String get() {

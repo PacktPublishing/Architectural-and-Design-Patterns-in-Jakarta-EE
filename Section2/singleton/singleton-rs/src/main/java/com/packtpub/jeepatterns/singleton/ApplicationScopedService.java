@@ -1,7 +1,6 @@
 package com.packtpub.jeepatterns.singleton;
 
 import java.util.UUID;
-
 import javax.enterprise.context.ApplicationScoped;
 
 /**

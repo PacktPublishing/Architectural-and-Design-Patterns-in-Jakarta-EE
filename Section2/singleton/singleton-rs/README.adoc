@@ -1,19 +1,19 @@
-include::../shared-doc/attributes.adoc[]
-
-= singleton-rs: Helloworld Using JAX-RS (Java API for RESTful Web Services)
+= singleton-rs: Singleton Using JAX-RS (Java API for RESTful Web Services)
 
 [abstract]
-The `singleton-rs` example demonstrates a simple Hello World application, bundled and deployed as a WAR, that uses JAX-RS to say Hello.
+The `singleton-rs` example demonstrates the Singleton Pattern using JAX-RS via CDI and EJB annotations.
 
 
 == What is it?
 
-The `singleton-rs` example demonstrates the use of CDI and JAX-RS in Jakarta EE.
+The `singleton-rs` example demonstrates the use of CDI and EJB annotations with JAX-RS in Jakarta EE.
 
 == Access the Application
 
 The application is deployed to http://localhost:8080/{artifactId}/.
 
-* The _XML_ content can be viewed by accessing the following URL: http://localhost:8080/{artifactId}/rest/xml
+* The Singleton ID example can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/id
 
-* The _JSON_ content can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/json
+* The _EJB_ Multithreaded example can be viewed by accessing the following URL: http://localhost:8080/{artifactId}/rest/multiejb
+
+* The _CDI_ MultiThreaded example can be viewed by accessing this URL: http://localhost:8080/{artifactId}/rest/multicdi

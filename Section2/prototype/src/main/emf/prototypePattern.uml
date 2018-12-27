@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dVzZwJj8EeiO4doaehRdwg" name="prototypePattern">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_drpt8Jj8EeiO4doaehRdwg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_A--hUAn-EemQ4pQHb8Kucw" name="Prototype" visibility="public">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QP_0UAn-EemQ4pQHb8Kucw" name="clone">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Z1-3IAn-EemQ4pQHb8Kucw" name="clone" type="_A--hUAn-EemQ4pQHb8Kucw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fInOYAn-EemQ4pQHb8Kucw" name="Client">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iNk0MAn-EemQ4pQHb8Kucw" name="main"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_mTPpEAn-EemQ4pQHb8Kucw" client="_fInOYAn-EemQ4pQHb8Kucw" supplier="_dVzZwJj8EeiO4doaehRdwg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ugPfsAn-EemQ4pQHb8Kucw" name="ConcretePrototype1">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DTTe8An_EemQ4pQHb8Kucw" name="clone">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_SbTY0An_EemQ4pQHb8Kucw" name="clone" type="_ugPfsAn-EemQ4pQHb8Kucw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_x0wkcAn-EemQ4pQHb8Kucw" client="_ugPfsAn-EemQ4pQHb8Kucw" supplier="_A--hUAn-EemQ4pQHb8Kucw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0ApNMAn-EemQ4pQHb8Kucw" name="ConcretePrototype2">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_E9GHQAn_EemQ4pQHb8Kucw" name="clone">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yto5kAn_EemQ4pQHb8Kucw" name="clone" type="_0ApNMAn-EemQ4pQHb8Kucw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_8h6qsAn-EemQ4pQHb8Kucw" client="_0ApNMAn-EemQ4pQHb8Kucw" supplier="_A--hUAn-EemQ4pQHb8Kucw"/>
+</uml:Model>

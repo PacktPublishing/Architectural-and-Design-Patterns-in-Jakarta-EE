@@ -5,7 +5,7 @@ package com.packtpub.jeepatterns.creational;
  * An Access Control List is a data structure used to guard access to
  * resources.
  */
-public class ACL implements Prototype{
+public class ACL implements Prototype {
 	
 	public static enum Group {
 		USER, ADMIN, MANAGER, ACCOUNTANT
@@ -14,13 +14,13 @@ public class ACL implements Prototype{
 	private final Group group;
 	private String permissions;
 	
-	public ACL(Group group, String access){
+	public ACL(Group group, String access) {
 		this.group = group;
 		this.permissions = access;
 	}
 	
 	@Override
-	public ACL clone(){
+	public ACL clone() {
 		try {
 			return (ACL) super.clone();
 		} catch (CloneNotSupportedException e) {
@@ -29,7 +29,7 @@ public class ACL implements Prototype{
 		return null;
 	}
 	
-	public Group getGroup(){
+	public Group getGroup() {
 		return group;
 	}
 

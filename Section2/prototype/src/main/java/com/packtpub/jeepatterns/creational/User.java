@@ -5,7 +5,7 @@ public class User {
 	private final String role;
 	private final ACL acl;
 
-	public User(String name, String role, ACL acl){
+	public User(String name, String role, ACL acl) {
 		this.name = name;
 		this.role = role;
 		this.acl = acl;

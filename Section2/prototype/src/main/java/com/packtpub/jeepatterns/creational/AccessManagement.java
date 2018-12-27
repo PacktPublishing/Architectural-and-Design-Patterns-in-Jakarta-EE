@@ -10,7 +10,7 @@ import com.packtpub.jeepatterns.creational.ACL.Group;
 public class AccessManagement {
 	private static Map<Group, ACL> access = new HashMap<>();
 	
-	static{
+	static {
 		System.out.println("Creating access control lists...");
 		access.put(USER, new ACL(USER,"DO WORK"));
 		access.put(ADMIN, new ACL(ADMIN, "MODIFY USERS"));
@@ -18,10 +18,10 @@ public class AccessManagement {
 		access.put(ACCOUNTANT, new ACL(ACCOUNTANT, "MODIFY REPORTS"));
 	}
 	
-	public static ACL getAccessControlList(Group group){
+	public static ACL getAccessControlList(Group group) {
 		ACL ac = null;
 		ac = access.get(group);
-		if(ac != null){
+		if(ac != null) {
 			return ac.clone();
 		}
 		return null;

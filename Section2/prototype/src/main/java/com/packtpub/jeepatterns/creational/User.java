@@ -3,12 +3,12 @@ package com.packtpub.jeepatterns.creational;
 public class User {
 	private final String name;
 	private final String role;
-	private final ACL aCL;
+	private final ACL acl;
 
-	public User(String name, String role, ACL aCL){
+	public User(String name, String role, ACL acl){
 		this.name = name;
 		this.role = role;
-		this.aCL = aCL;
+		this.acl = acl;
 	}
 	
 	public String getName() {
@@ -18,11 +18,11 @@ public class User {
 		return role;
 	}
 	public ACL getACL() {
-		return aCL;
+		return acl;
 	}
 	
 	@Override
 	public String toString(){
-		return "Name: " + name + ", Role: "+ role + ", Access Group: " + aCL.getGroup() + ", Permission: " + aCL.getPermission();
+		return "Name: " + name + ", Role: "+ role + ", Access Group: " + acl.getGroup() + ", Permission: " + acl.getPermission();
 	}
 }

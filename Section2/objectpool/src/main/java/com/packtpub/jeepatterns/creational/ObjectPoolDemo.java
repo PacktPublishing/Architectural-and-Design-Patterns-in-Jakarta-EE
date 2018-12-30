@@ -30,11 +30,11 @@ public class ObjectPoolDemo {
 			doOption(option);
 		} else {
 			try (Scanner scanner = new Scanner(System.in)) {
-			while (true) {
-				printOptions();
-				boolean done = doOption(scanner.nextLine());
-				if (done)
-					return;
+				while (true) {
+					printOptions();
+					boolean done = doOption(scanner.nextLine());
+					if (done)
+						return;
 				}
 			}
 		}
@@ -74,28 +74,28 @@ public class ObjectPoolDemo {
 
 	private GenericObjectPool objectPool = null;
 
-	@SuppressWarnings("unused")
-	private DataSource setUpPool() throws Exception {
+	private GenericObjectPool getConnectionPool() {
+		return objectPool;
+	}
+	
+	private DataSource getDataSource() throws Exception {
 		Class.forName(DB_DRIVER);
 
-		// Creates an Instance of GenericObjectPool That Holds our Connection Pool
+		// Creates an instance of GenericObjectPool as our Connection Pool
 		objectPool = new GenericObjectPool();
 		objectPool.setMaxActive(5);
 
 		// Creates a ConnectionFactory used by the Pool
 		ConnectionFactory cf = new DriverManagerConnectionFactory(DB_CONNECTION, DB_USER, DB_PASSWORD);
 
-		// Creates a PoolableConnectionFactory that wraps the Connection Object
+		// Creates a PoolableConnectionFactory that wraps the Connection
+		@SuppressWarnings("unused")
 		PoolableConnectionFactory pcf = new PoolableConnectionFactory(cf, objectPool, null, null, false, true);
 		return new PoolingDataSource(objectPool);
 	}
 
-	private GenericObjectPool getConnectionPool() {
-		return objectPool;
-	}
-
 	// Print the Connection Pool status
-	private void printDbStatus() {
+	private void printPoolStatus() {
 		System.out.println("Max.: " + getConnectionPool().getMaxActive() + "; Active: "
 				+ getConnectionPool().getNumActive() + "; Idle: " + getConnectionPool().getNumIdle());
 	}
@@ -104,28 +104,30 @@ public class ObjectPoolDemo {
 	 * Object Pool Pattern demo.
 	 */
 	private void objectPoolDemo() {
+		// Set up the DB schema
 		initSchema();
 
 		try {
-			DataSource dataSource = setUpPool();
-			printDbStatus();
+			DataSource dataSource = getDataSource();
+			printPoolStatus();
 
 			// Performing DB Operation!
 			System.out.println("---------------------------------------------------------------------------");
-			System.out.println("Creating a New Connection Object For Db Transaction");
+			System.out.println("Creating a new Connection");
 			System.out.println("---------------------------------------------------------------------------");
-
 			try (Connection conn = dataSource.getConnection();
-					PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM users");) {
+				 PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM users");) {
 
 				try (ResultSet rs = pstmt.executeQuery();) {
 					while (rs.next()) {
-						System.out.println("Username: " + rs.getString("name"));
+						if (rs.isFirst()) System.out.println("List of Users");
+						System.out.println(String.format("User: %s (%s)", 
+								rs.getString("name"), rs.getString("email")));
 					}
+					printPoolStatus();
 					System.out.println("---------------------------------------------------------------------------");
-					System.out.println("Releasing Connection Object To Pool");
+					System.out.println("Releasing Connection to Pool");
 					System.out.println("---------------------------------------------------------------------------");
-					printDbStatus();
 				}
 			} catch (SQLException se) {
 				se.printStackTrace();
@@ -133,13 +135,14 @@ public class ObjectPoolDemo {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		printDbStatus();
+		printPoolStatus();
 	}
 
-	@SuppressWarnings("deprecation")
 	private void initSchema() {
-		Flyway flyway = new Flyway();
-		flyway.setDataSource(DB_CONNECTION, DB_USER, DB_PASSWORD);
+		Flyway flyway = Flyway.configure()
+					       .dataSource(DB_CONNECTION, DB_USER, DB_PASSWORD)
+					       .load();
+		flyway.clean();
 		flyway.migrate();
 	}
 }

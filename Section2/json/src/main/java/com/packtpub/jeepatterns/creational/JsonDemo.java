@@ -34,17 +34,17 @@ public class JsonDemo {
 		}
 	}
 
-	@SuppressWarnings("resource")
 	private void start(String option) {
 		if (option != null && !option.isEmpty()) {
 			doOption(option);
 		} else {
+			try (Scanner scanner = new Scanner(System.in)) {
 			while (true) {
 				printOptions();
-				Scanner scanner = new Scanner(System.in);
 				boolean done = doOption(scanner.nextLine());
 				if (done)
 					return;
+				}
 			}
 		}
 	}

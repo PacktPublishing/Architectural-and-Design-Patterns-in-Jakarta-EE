@@ -19,17 +19,17 @@ public class PrototypeDemo {
 		}
 	}
 
-	@SuppressWarnings("resource")
 	private void start(String option) {
 		if (option != null && !option.isEmpty()) {
 			doOption(option);
 		} else {
+			try (Scanner scanner = new Scanner(System.in)) {
 			while (true) {
 				printOptions();
-				Scanner scanner = new Scanner(System.in);
 				boolean done = doOption(scanner.nextLine());
 				if (done)
 					return;
+				}
 			}
 		}
 	}
@@ -73,6 +73,7 @@ public class PrototypeDemo {
 		
 		userACL = AccessManagement.getAccessControlList(USER);
 		user = new User("Wally", "USER Role", userACL);
+		System.out.println(user);
 		System.out.println("Changing permission of: "+ user.getName());
 		user.getACL().setPermission("READ REPORTS");
 		System.out.println(user);

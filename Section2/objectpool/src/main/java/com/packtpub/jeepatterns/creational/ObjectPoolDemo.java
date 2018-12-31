@@ -111,7 +111,7 @@ public class ObjectPoolDemo {
 			DataSource dataSource = getDataSource();
 			printPoolStatus();
 
-			// Performing DB Operation!
+			// Performing DB operation
 			System.out.println("---------------------------------------------------------------------------");
 			System.out.println("Creating a new Connection");
 			System.out.println("---------------------------------------------------------------------------");

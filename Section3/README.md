@@ -1,3 +1,3 @@
 # Section 3
 
-- [Simple CDI Interceptor](https://github.com/apache/tomee/tree/master/examples/simple-cdi-interceptor) for Video 3.4
+- [JavaMoney Payment CDI Events](https://github.com/JavaMoney/javamoney-examples/tree/master/web/javamoney-payment-cdi-event) for Video 3.1

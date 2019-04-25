@@ -4,13 +4,13 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_fInOYAn-EemQ4pQHb8Kucw" name="Colleague" isAbstract="true">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_yfllIGSKEemCNYviinEdcA" name="mediator" type="_mMBMoGSIEemCNYviinEdcA" association="_yffegGSKEemCNYviinEdcA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yfllIWSKEemCNYviinEdcA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yfmMMGSKEemCNYviinEdcA" value="1"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2-AWIGeIEemUCoFGB6u17g" name="mediator" type="_l3hWUGeIEemUCoFGB6u17g" association="_298EsGeIEemUCoFGB6u17g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2-DZcGeIEemUCoFGB6u17g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2-EAgGeIEemUCoFGB6u17g" value="1"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ugPfsAn-EemQ4pQHb8Kucw" name="Mediator1">
-    <generalization xmi:type="uml:Generalization" xmi:id="_5d4e4GSIEemCNYviinEdcA" general="_mMBMoGSIEemCNYviinEdcA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xB8AUGeIEemUCoFGB6u17g" client="_ugPfsAn-EemQ4pQHb8Kucw" supplier="_l3hWUGeIEemUCoFGB6u17g" contract="_l3hWUGeIEemUCoFGB6u17g"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_DTTe8An_EemQ4pQHb8Kucw" name="mediate"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_QcV2oC_vEemJO6N_b6ssPA" name="Mediator">
@@ -70,9 +70,6 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_QptP0GSKEemCNYviinEdcA" name="action1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_mMBMoGSIEemCNYviinEdcA" name="Mediator" isAbstract="true">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_uyy1MGSIEemCNYviinEdcA" name="mediate"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_bRK9wGSKEemCNYviinEdcA" name="Colleague2">
     <generalization xmi:type="uml:Generalization" xmi:id="_bRK9wWSKEemCNYviinEdcA" general="_fInOYAn-EemQ4pQHb8Kucw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_bRK9wmSKEemCNYviinEdcA" name="state" visibility="private">
@@ -85,12 +82,15 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_bRK9xWSKEemCNYviinEdcA" name="action2"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_yffegGSKEemCNYviinEdcA" memberEnd="_yfllIGSKEemCNYviinEdcA _yfmMMWSKEemCNYviinEdcA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yfjI4GSKEemCNYviinEdcA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yfjv8GSKEemCNYviinEdcA" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_yfmMMWSKEemCNYviinEdcA" name="colleague" type="_fInOYAn-EemQ4pQHb8Kucw" association="_yffegGSKEemCNYviinEdcA"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_PQZeEGSLEemCNYviinEdcA" name="colleague 1" client="_ugPfsAn-EemQ4pQHb8Kucw" supplier="_oOJNAC_xEemJO6N_b6ssPA"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_chBmoGSLEemCNYviinEdcA" name="colleague 2" client="_dVzZwJj8EeiO4doaehRdwg" supplier="_bRK9wGSKEemCNYviinEdcA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_l3hWUGeIEemUCoFGB6u17g" name="Mediator">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qcQFwGeIEemUCoFGB6u17g" name="mediate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_298EsGeIEemUCoFGB6u17g" memberEnd="_2-AWIGeIEemUCoFGB6u17g _2-EAgWeIEemUCoFGB6u17g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_29-g8GeIEemUCoFGB6u17g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_29-g8WeIEemUCoFGB6u17g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2-EAgWeIEemUCoFGB6u17g" name="colleague" type="_fInOYAn-EemQ4pQHb8Kucw" association="_298EsGeIEemUCoFGB6u17g"/>
+  </packagedElement>
 </uml:Model>

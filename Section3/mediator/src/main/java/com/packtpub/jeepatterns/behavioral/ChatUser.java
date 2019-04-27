@@ -1,5 +1,10 @@
 package com.packtpub.jeepatterns.behavioral;
 
+/**
+ * A concrete User
+ *
+ * @author Werner Keil
+ */
 public class ChatUser extends User {
 
 	public ChatUser(ChatMediator chatMediator, String name) {

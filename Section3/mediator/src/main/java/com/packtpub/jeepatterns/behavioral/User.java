@@ -1,5 +1,10 @@
 package com.packtpub.jeepatterns.behavioral;
 
+/**
+ * An abstract User (Colleague)
+ *
+ * @author Werner Keil
+ */
 public abstract class User {
 	protected final ChatMediator mediator;
 	protected final String name;

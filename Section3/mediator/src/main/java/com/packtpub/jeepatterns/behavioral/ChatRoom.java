@@ -3,6 +3,11 @@ package com.packtpub.jeepatterns.behavioral;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A concrete Mediator
+ *
+ * @author Werner Keil
+ */
 public class ChatRoom implements ChatMediator {
 
 	private List<User> users;

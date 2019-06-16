@@ -3,22 +3,8 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_drpt8Jj8EeiO4doaehRdwg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_A--hUAn-EemQ4pQHb8Kucw" name="Observer" visibility="package">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zyCGMA0vEemvR5X77nx6GA" name="update"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_fInOYAn-EemQ4pQHb8Kucw" name="Subject">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_rh6AoC_tEemJO6N_b6ssPA" name="register">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_B9yX0C_uEemJO6N_b6ssPA" name="o" type="_A--hUAn-EemQ4pQHb8Kucw"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_tsr2IC_tEemJO6N_b6ssPA" name="unregister">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LXuisC_uEemJO6N_b6ssPA" name="o" type="_A--hUAn-EemQ4pQHb8Kucw"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_iNk0MAn-EemQ4pQHb8Kucw" name="notify"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Realization" xmi:id="_SMxm0A0vEemvR5X77nx6GA" client="_dVzZwJj8EeiO4doaehRdwg" supplier="_A--hUAn-EemQ4pQHb8Kucw"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_nCARYC_uEemJO6N_b6ssPA" name="notify states" client="_fInOYAn-EemQ4pQHb8Kucw" supplier="_A--hUAn-EemQ4pQHb8Kucw"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_QcV2oC_vEemJO6N_b6ssPA" name="Observer">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_iHY8EC_vEemJO6N_b6ssPA" name="" type="_oOJNAC_xEemJO6N_b6ssPA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iHY8EC_vEemJO6N_b6ssPA" name=""/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="__ORysC_vEemJO6N_b6ssPA" name=""/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BpIEgC_wEemJO6N_b6ssPA" name=""/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_iHXG4C_vEemJO6N_b6ssPA" name="s1" represents="_iHY8EC_vEemJO6N_b6ssPA" coveredBy="_WBFcIS_wEemJO6N_b6ssPA _ifkWES_wEemJO6N_b6ssPA _OstPkC_wEemJO6N_b6ssPA _Oso-IC_wEemJO6N_b6ssPA _JKfHsC_xEemJO6N_b6ssPA _JKfHsS_xEemJO6N_b6ssPA _Z2ej4C_xEemJO6N_b6ssPA _Ost2oC_wEemJO6N_b6ssPA _Z3EZwC_xEemJO6N_b6ssPA _3bFb0C_yEemJO6N_b6ssPA _6JSHcC_yEemJO6N_b6ssPA _6JRgYC_yEemJO6N_b6ssPA _3bpcgS_yEemJO6N_b6ssPA"/>
@@ -51,24 +37,16 @@
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_6JSHcC_yEemJO6N_b6ssPA" name="ActionExecutionSpecification38Finish" covered="_iHXG4C_vEemJO6N_b6ssPA" execution="_6JRgYC_yEemJO6N_b6ssPA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3bpcgS_yEemJO6N_b6ssPA" name="Message36ReceiveEvent" covered="_iHXG4C_vEemJO6N_b6ssPA" message="_3bo1cC_yEemJO6N_b6ssPA"/>
     <message xmi:type="uml:Message" xmi:id="_WBCY0C_wEemJO6N_b6ssPA" name="attach" receiveEvent="_WBFcIS_wEemJO6N_b6ssPA" sendEvent="_WBFcIC_wEemJO6N_b6ssPA">
-      <argument xmi:type="uml:Expression" xmi:id="_b24K0C_wEemJO6N_b6ssPA" name="o1" type="_A--hUAn-EemQ4pQHb8Kucw"/>
+      <argument xmi:type="uml:Expression" xmi:id="_b24K0C_wEemJO6N_b6ssPA" name="o1"/>
     </message>
     <message xmi:type="uml:Message" xmi:id="_ifjH8C_wEemJO6N_b6ssPA" name="attach" receiveEvent="_ifkWES_wEemJO6N_b6ssPA" sendEvent="_ifkWEC_wEemJO6N_b6ssPA">
-      <argument xmi:type="uml:InstanceValue" xmi:id="_pTh9MC_wEemJO6N_b6ssPA" name="o2" type="_A--hUAn-EemQ4pQHb8Kucw"/>
+      <argument xmi:type="uml:InstanceValue" xmi:id="_pTh9MC_wEemJO6N_b6ssPA" name="o2"/>
     </message>
     <message xmi:type="uml:Message" xmi:id="_JKdSgC_xEemJO6N_b6ssPA" name="notify" receiveEvent="_JKfHsS_xEemJO6N_b6ssPA" sendEvent="_JKfHsC_xEemJO6N_b6ssPA"/>
     <message xmi:type="uml:Message" xmi:id="_Z2dVwC_xEemJO6N_b6ssPA" name="update" receiveEvent="_Z2fK8C_xEemJO6N_b6ssPA" sendEvent="_Z2ej4C_xEemJO6N_b6ssPA"/>
     <message xmi:type="uml:Message" xmi:id="_Z3DysC_xEemJO6N_b6ssPA" name="getState" messageSort="reply" receiveEvent="_Z3EZwC_xEemJO6N_b6ssPA" sendEvent="_Z3DysS_xEemJO6N_b6ssPA"/>
     <message xmi:type="uml:Message" xmi:id="_3bE0wC_yEemJO6N_b6ssPA" name="update2" receiveEvent="_3bGC4C_yEemJO6N_b6ssPA" sendEvent="_3bFb0C_yEemJO6N_b6ssPA"/>
     <message xmi:type="uml:Message" xmi:id="_3bo1cC_yEemJO6N_b6ssPA" name="getState2" messageSort="reply" receiveEvent="_3bpcgS_yEemJO6N_b6ssPA" sendEvent="_3bpcgC_yEemJO6N_b6ssPA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_oOJNAC_xEemJO6N_b6ssPA" name="Subject1">
-    <generalization xmi:type="uml:Generalization" xmi:id="_rUxmwC_xEemJO6N_b6ssPA" general="_fInOYAn-EemQ4pQHb8Kucw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_3zB3MC_xEemJO6N_b6ssPA" name="state" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EJavaObject"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_MWQqsC_yEemJO6N_b6ssPA" name="setState"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_N3ArwC_yEemJO6N_b6ssPA" name="getState"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_i9mhIJCAEemiFLxRn4s-YQ" name="Context">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0Ft4oJCAEemiFLxRn4s-YQ" name="state" type="_esaYwJCAEemiFLxRn4s-YQ" aggregation="shared" association="_0FpAIJCAEemiFLxRn4s-YQ">

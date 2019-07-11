@@ -64,16 +64,15 @@ public class StateDemo {
 	 */
 	private void statePatternDemo() {
 		// TV Remote States
-		{
-			final Context context = new TVRemoteContext();
-			State tvState1 = new TVOnState();
-			State tvState2 = new TVOffState();
 
-			context.setState(tvState1);
-			context.request();
+		final Context context = new TVRemoteContext();
+		State tvState1 = new TVOnState();
+		State tvState2 = new TVOffState();
 
-			context.setState(tvState2);
-			context.request();
-		}
+		context.setState(tvState1);
+		context.request();
+
+		context.setState(tvState2);
+		context.request();
 	}
 }

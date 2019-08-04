@@ -7,13 +7,13 @@ import java.util.Scanner;
  *
  * @author Werner Keil
  */
-public class StateDemo {
+public class BehavioralDemo {
 
 	public static void main(String[] args) {
 		if (args != null && args.length > 0) {
-			new StateDemo().start(args[0]);
+			new BehavioralDemo().start(args[0]);
 		} else {
-			new StateDemo().start("");
+			new BehavioralDemo().start("");
 		}
 	}
 
@@ -67,12 +67,16 @@ public class StateDemo {
 
 		final Context context = new TVRemoteContext();
 		State tvState1 = new TVOnState();
-		State tvState2 = new TVOffState();
+		State tvState2 = new TVStandbyState();
+		State tvState3 = new TVOffState();
 
 		context.setState(tvState1);
 		context.request();
 
 		context.setState(tvState2);
+		context.request();
+		
+		context.setState(tvState3);
 		context.request();
 	}
 }

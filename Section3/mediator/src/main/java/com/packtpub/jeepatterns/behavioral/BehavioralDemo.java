@@ -7,13 +7,13 @@ import java.util.Scanner;
  *
  * @author Werner Keil
  */
-public class MediatorDemo {
+public class BehavioralDemo {
 
 	public static void main(String[] args) {
 		if (args != null && args.length > 0) {
-			new MediatorDemo().start(args[0]);
+			new BehavioralDemo().start(args[0]);
 		} else {
-			new MediatorDemo().start("");
+			new BehavioralDemo().start("");
 		}
 	}
 
@@ -63,7 +63,7 @@ public class MediatorDemo {
 	 * Mediator Pattern demo.
 	 */
 	private void mediatorPatternDemo() {
-		// Builder factory
+		// Mediator pattern
 		{
 		    final ChatMediator chatMediator = new ChatRoom();
 		    User john = new ChatUser(chatMediator, "John");

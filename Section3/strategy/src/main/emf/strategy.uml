@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_by3EsLa_EemePZnp2zAznw" name="strategy">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_b4SXQLa_EemePZnp2zAznw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_bzCD0La_EemePZnp2zAznw" name="Strategy Sequence">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7d5cLbCEemePZnp2zAznw" name="" type="_xd8boLbAEemePZnp2zAznw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y7dSYLbCEemePZnp2zAznw" name="" represents="_Y7d5cLbCEemePZnp2zAznw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xd8boLbAEemePZnp2zAznw" name="Context">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HBomkLbBEemePZnp2zAznw" name="operation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_znvZsLbAEemePZnp2zAznw" name="Strategy">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jaSeMLbBEemePZnp2zAznw" name="execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6JQl8LbAEemePZnp2zAznw" name="strategy" client="_xd8boLbAEemePZnp2zAznw" supplier="_znvZsLbAEemePZnp2zAznw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qRb8MLbBEemePZnp2zAznw" name="Strategy1">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ufvIoLbBEemePZnp2zAznw" client="_qRb8MLbBEemePZnp2zAznw" supplier="_znvZsLbAEemePZnp2zAznw" contract="_znvZsLbAEemePZnp2zAznw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Fj6O4LbCEemePZnp2zAznw" name="execute1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zmeY8LbBEemePZnp2zAznw" name="Strategy2">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_2pPmYLbBEemePZnp2zAznw" client="_zmeY8LbBEemePZnp2zAznw" supplier="_znvZsLbAEemePZnp2zAznw" contract="_znvZsLbAEemePZnp2zAznw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RiXk8LbCEemePZnp2zAznw" name="execute2"/>
+  </packagedElement>
+</uml:Model>

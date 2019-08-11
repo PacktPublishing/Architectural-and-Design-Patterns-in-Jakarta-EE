@@ -5,7 +5,25 @@
   </packageImport>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_bzCD0La_EemePZnp2zAznw" name="Strategy Sequence">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7d5cLbCEemePZnp2zAznw" name="" type="_xd8boLbAEemePZnp2zAznw"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y7dSYLbCEemePZnp2zAznw" name="" represents="_Y7d5cLbCEemePZnp2zAznw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PjNboLyLEemTONTecUDVQA" name="" type="_qRb8MLbBEemePZnp2zAznw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DgolILyMEemTONTecUDVQA" name="" type="_zmeY8LbBEemePZnp2zAznw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y7dSYLbCEemePZnp2zAznw" name="" represents="_Y7d5cLbCEemePZnp2zAznw" coveredBy="_6HXvsLyLEemTONTecUDVQA _6M-BYLyLEemTONTecUDVQA _HbZxkLyMEemTONTecUDVQA _HcO4ALyMEemTONTecUDVQA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_PjJxQLyLEemTONTecUDVQA" name="" represents="_PjNboLyLEemTONTecUDVQA" coveredBy="_6HY90LyLEemTONTecUDVQA _6M9aULyLEemTONTecUDVQA _6Muw0LyLEemTONTecUDVQA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Dgn-ELyMEemTONTecUDVQA" name="" represents="_DgolILyMEemTONTecUDVQA" coveredBy="_HbaYoLyMEemTONTecUDVQA _HcOQ8LyMEemTONTecUDVQA _HcJYcLyMEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6HXvsLyLEemTONTecUDVQA" name="Message5SendEvent" covered="_Y7dSYLbCEemePZnp2zAznw" message="_6HLicLyLEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6HY90LyLEemTONTecUDVQA" name="Message5ReceiveEvent" covered="_PjJxQLyLEemTONTecUDVQA" message="_6HLicLyLEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_6Muw0LyLEemTONTecUDVQA" name="BehaviorExecutionSpecification8" covered="_PjJxQLyLEemTONTecUDVQA" finish="_6M9aULyLEemTONTecUDVQA" start="_6HY90LyLEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6M9aULyLEemTONTecUDVQA" name="Message10SendEvent" covered="_PjJxQLyLEemTONTecUDVQA" message="_6M8zQLyLEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6M-BYLyLEemTONTecUDVQA" name="Message10ReceiveEvent" covered="_Y7dSYLbCEemePZnp2zAznw" message="_6M8zQLyLEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HbZxkLyMEemTONTecUDVQA" name="Message14SendEvent" covered="_Y7dSYLbCEemePZnp2zAznw" message="_HbYjcLyMEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HbaYoLyMEemTONTecUDVQA" name="Message14ReceiveEvent" covered="_Dgn-ELyMEemTONTecUDVQA" message="_HbYjcLyMEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_HcJYcLyMEemTONTecUDVQA" name="BehaviorExecutionSpecification17" covered="_Dgn-ELyMEemTONTecUDVQA" finish="_HcOQ8LyMEemTONTecUDVQA" start="_HbaYoLyMEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HcOQ8LyMEemTONTecUDVQA" name="Message19SendEvent" covered="_Dgn-ELyMEemTONTecUDVQA" message="_HcNp4LyMEemTONTecUDVQA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HcO4ALyMEemTONTecUDVQA" name="Message19ReceiveEvent" covered="_Y7dSYLbCEemePZnp2zAznw" message="_HcNp4LyMEemTONTecUDVQA"/>
+    <message xmi:type="uml:Message" xmi:id="_6HLicLyLEemTONTecUDVQA" name="Message10" receiveEvent="_6HY90LyLEemTONTecUDVQA" sendEvent="_6HXvsLyLEemTONTecUDVQA"/>
+    <message xmi:type="uml:Message" xmi:id="_6M8zQLyLEemTONTecUDVQA" name="Message10" messageSort="reply" receiveEvent="_6M-BYLyLEemTONTecUDVQA" sendEvent="_6M9aULyLEemTONTecUDVQA"/>
+    <message xmi:type="uml:Message" xmi:id="_HbYjcLyMEemTONTecUDVQA" name="Message14" receiveEvent="_HbaYoLyMEemTONTecUDVQA" sendEvent="_HbZxkLyMEemTONTecUDVQA"/>
+    <message xmi:type="uml:Message" xmi:id="_HcNp4LyMEemTONTecUDVQA" name="Message19" messageSort="reply" receiveEvent="_HcO4ALyMEemTONTecUDVQA" sendEvent="_HcOQ8LyMEemTONTecUDVQA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_xd8boLbAEemePZnp2zAznw" name="Context">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_HBomkLbBEemePZnp2zAznw" name="operation"/>

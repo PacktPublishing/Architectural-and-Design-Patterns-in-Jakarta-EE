@@ -4,7 +4,7 @@ package com.packtpub.jeepatterns.behavioral.strategy;
 	@Implementation
 	public class Strategy2 implements Strategy {
 	 
-	    public void execute() {
-	        System.out.println("second");
+	    public String execute() {
+	        return "second";
 	    }
 	}

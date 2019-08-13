@@ -10,6 +10,7 @@ public class Context {
 
 	public void operation() {
 		Strategy strategy = instance.get();
-		strategy.execute();
+		String result = strategy.execute();
+		System.out.println(result);
 	}
 }

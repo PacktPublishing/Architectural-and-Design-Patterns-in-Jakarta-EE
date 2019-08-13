@@ -72,7 +72,7 @@ public class StrategyDemo {
 		System.setProperty("strategy.number", strategy);
 		
 		try (SeContainer cdiContainer = SeContainerInitializer.newInstance().initialize()) {
-			System.out.println("Get context");
+			System.out.println("Getting context...");
 			Context c = cdiContainer.select(Context.class).get();
 			c.operation();
 		}

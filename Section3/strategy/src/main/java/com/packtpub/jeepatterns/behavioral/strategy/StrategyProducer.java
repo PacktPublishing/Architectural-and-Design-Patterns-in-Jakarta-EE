@@ -13,8 +13,9 @@ public class StrategyProducer {
 	
 	@Produces
 	public Strategy getInstance(@Any @Implementation Instance<Strategy> instances, InjectionPoint injectionPoint) {
-		String strategy = STRATEGY_PREFIX + System.getProperty("strategy.number");
+		final String strategy = STRATEGY_PREFIX + System.getProperty("strategy.number");
 		
+		@SuppressWarnings("rawtypes")
 		Map<Class, Strategy> strategies = new HashMap<>();
 		for (Strategy a : instances) {
 			strategies.put(a.getClass(), a);
@@ -26,6 +27,5 @@ public class StrategyProducer {
 		} catch (ClassNotFoundException e) {
 			throw new IllegalArgumentException("Unknown strategy");
 		}
-		
 	}
 }

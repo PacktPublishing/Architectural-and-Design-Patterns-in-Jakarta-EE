@@ -10,10 +10,11 @@ import javax.enterprise.inject.spi.InjectionPoint;
 
 public class StrategyProducer {
 	private static final String STRATEGY_PREFIX = "com.packtpub.jeepatterns.behavioral.strategy.Strategy";
+	private static final String STRATEGY_NUMBER_PROPERTY = "strategy.number";
 	
 	@Produces
 	public Strategy getInstance(@Any @Implementation Instance<Strategy> instances, InjectionPoint injectionPoint) {
-		final String strategy = STRATEGY_PREFIX + System.getProperty("strategy.number");
+		final String strategy = STRATEGY_PREFIX + System.getProperty(STRATEGY_NUMBER_PROPERTY);
 		
 		@SuppressWarnings("rawtypes")
 		Map<Class, Strategy> strategies = new HashMap<>();

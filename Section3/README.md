@@ -4,3 +4,4 @@
 - [Mediator Pattern](mediator) for Video 3.2
 - [State Pattern](state) demo and [JavaMoney Vending Machine](https://github.com/JavaMoney/vendingmachine) for Video 3.3
 - [Strategy Pattern](strategy) for Video 3.4
+- [Visitor Pattern](visitor) for Video 3.5

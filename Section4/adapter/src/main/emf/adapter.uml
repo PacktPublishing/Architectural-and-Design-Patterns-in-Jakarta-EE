@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_O9SEENKEEemFM_W8b2cnyA" name="adapter">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_PBbkQNKEEemFM_W8b2cnyA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YJf8ANKEEemFM_W8b2cnyA" name="Client"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Z1BpsNKEEemFM_W8b2cnyA" name="Target">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5u0s0NKEEemFM_W8b2cnyA" name="operation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nFxHANKEEemFM_W8b2cnyA" memberEnd="_nFy8MtKEEemFM_W8b2cnyA _nFzjQNKEEemFM_W8b2cnyA" navigableOwnedEnd="_nFy8MtKEEemFM_W8b2cnyA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nFy8MNKEEemFM_W8b2cnyA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nFy8MdKEEemFM_W8b2cnyA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nFy8MtKEEemFM_W8b2cnyA" name="target" type="_Z1BpsNKEEemFM_W8b2cnyA" association="_nFxHANKEEemFM_W8b2cnyA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nFzjQNKEEemFM_W8b2cnyA" name="client" type="_YJf8ANKEEemFM_W8b2cnyA" association="_nFxHANKEEemFM_W8b2cnyA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Il8SENKFEemFM_W8b2cnyA" name="Adapter">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_M-0W0NKFEemFM_W8b2cnyA" client="_Il8SENKFEemFM_W8b2cnyA" supplier="_Z1BpsNKEEemFM_W8b2cnyA" contract="_Z1BpsNKEEemFM_W8b2cnyA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UdERENKFEemFM_W8b2cnyA" name="operation1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bGFzgNKFEemFM_W8b2cnyA" name="Adaptee">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3WAcNKFEemFM_W8b2cnyA" name="specificOperation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_y1OiUNKFEemFM_W8b2cnyA" memberEnd="_y1PJYtKFEemFM_W8b2cnyA _y1PwcNKFEemFM_W8b2cnyA" navigableOwnedEnd="_y1PJYtKFEemFM_W8b2cnyA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y1PJYNKFEemFM_W8b2cnyA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y1PJYdKFEemFM_W8b2cnyA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y1PJYtKFEemFM_W8b2cnyA" name="adaptee" type="_bGFzgNKFEemFM_W8b2cnyA" association="_y1OiUNKFEemFM_W8b2cnyA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_y1PwcNKFEemFM_W8b2cnyA" name="adapter" type="_Il8SENKFEemFM_W8b2cnyA" association="_y1OiUNKFEemFM_W8b2cnyA"/>
+  </packagedElement>
+</uml:Model>

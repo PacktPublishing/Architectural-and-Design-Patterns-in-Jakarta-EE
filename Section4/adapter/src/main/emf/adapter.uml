@@ -15,6 +15,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_nFzjQNKEEemFM_W8b2cnyA" name="client" type="_YJf8ANKEEemFM_W8b2cnyA" association="_nFxHANKEEemFM_W8b2cnyA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Il8SENKFEemFM_W8b2cnyA" name="Adapter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7MtGQAWsEeqjCs74q5Zrbg" general="_bGFzgNKFEemFM_W8b2cnyA"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_M-0W0NKFEemFM_W8b2cnyA" client="_Il8SENKFEemFM_W8b2cnyA" supplier="_Z1BpsNKEEemFM_W8b2cnyA" contract="_Z1BpsNKEEemFM_W8b2cnyA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UdERENKFEemFM_W8b2cnyA" name="operation1"/>
   </packagedElement>

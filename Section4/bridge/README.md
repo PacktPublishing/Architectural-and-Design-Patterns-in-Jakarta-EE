@@ -1,3 +1,3 @@
-# Adapter Pattern
+# Bridge Pattern
 
-- [Resource Adapter Traffic Example](https://github.com/eclipse-ee4j/jakartaee-tutorial-examples/tree/master/connectors/traffic)
+- [Portlet Bridge Example](https://github.com/keilw/liferay-faces-bridge-impl)

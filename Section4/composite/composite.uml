@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_MCGHYDDhEeq0r6iukDIo0A" name="composite">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_MNoB8DDhEeq0r6iukDIo0A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_MDEXwDDhEeq0r6iukDIo0A" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NCNgkDDhEeq0r6iukDIo0A" name="Component" isAbstract="true">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZHXUgDDhEeq0r6iukDIo0A" name="operation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QkWxoDDhEeq0r6iukDIo0A" name="Leaf">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dSX8YDDhEeq0r6iukDIo0A" general="_NCNgkDDhEeq0r6iukDIo0A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hSs-QDDhEeq0r6iukDIo0A" name="Composite">
+    <generalization xmi:type="uml:Generalization" xmi:id="_kLLnQDDhEeq0r6iukDIo0A" general="_NCNgkDDhEeq0r6iukDIo0A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m0B40DDhEeq0r6iukDIo0A" name="children" type="_NCNgkDDhEeq0r6iukDIo0A" aggregation="composite" association="_mz-OcDDhEeq0r6iukDIo0A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m0QiUDDhEeq0r6iukDIo0A" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mz-OcDDhEeq0r6iukDIo0A" visibility="private" memberEnd="_m0B40DDhEeq0r6iukDIo0A _m0UMsDDhEeq0r6iukDIo0A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m0ADoDDhEeq0r6iukDIo0A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m0AqsDDhEeq0r6iukDIo0A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m0UMsDDhEeq0r6iukDIo0A" name="composite" type="_hSs-QDDhEeq0r6iukDIo0A" association="_mz-OcDDhEeq0r6iukDIo0A"/>
+  </packagedElement>
+</uml:Model>

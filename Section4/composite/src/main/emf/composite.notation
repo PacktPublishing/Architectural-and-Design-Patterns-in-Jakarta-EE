@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
-  <notation:Diagram xmi:id="_MC0gIDDhEeq0r6iukDIo0A" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_MC0gIDDhEeq0r6iukDIo0A" type="PapyrusUMLClassDiagram" name="Composite Pattern" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_NCTAIDDhEeq0r6iukDIo0A" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_NCUOQDDhEeq0r6iukDIo0A" type="Class_NameLabel"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_NCUOQTDhEeq0r6iukDIo0A" type="Class_FloatingNameLabel">
@@ -149,7 +149,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m1l_ETDhEeq0r6iukDIo0A" id="(1.0,0.49382716049382713)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_MDXSsDDhEeq0r6iukDIo0A" type="PapyrusUMLSequenceDiagram" name="Sequence Diagram" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_MDXSsDDhEeq0r6iukDIo0A" type="PapyrusUMLSequenceDiagram" name="Composite View Sequence" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_MDXSsTDhEeq0r6iukDIo0A" type="Interaction_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_MDXSsjDhEeq0r6iukDIo0A" type="Interaction_NameLabel"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_MDXSszDhEeq0r6iukDIo0A" type="Interaction_SubfragmentCompartment">

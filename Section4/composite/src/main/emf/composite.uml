@@ -3,7 +3,7 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_MNoB8DDhEeq0r6iukDIo0A">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_MDEXwDDhEeq0r6iukDIo0A" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_MDEXwDDhEeq0r6iukDIo0A" name="CompositeView"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_NCNgkDDhEeq0r6iukDIo0A" name="Component" isAbstract="true">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ZHXUgDDhEeq0r6iukDIo0A" name="operation"/>
   </packagedElement>

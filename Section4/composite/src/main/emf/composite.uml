@@ -3,7 +3,12 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_MNoB8DDhEeq0r6iukDIo0A">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_MDEXwDDhEeq0r6iukDIo0A" name="CompositeView"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_MDEXwDDhEeq0r6iukDIo0A" name="CompositeView">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0aplkDJMEeq0r6iukDIo0A" name="" type="_iG5MQDJKEeq0r6iukDIo0A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1VW6UDJMEeq0r6iukDIo0A" name="" type="_lKF3gDJKEeq0r6iukDIo0A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0ao-gDJMEeq0r6iukDIo0A" name="" represents="_0aplkDJMEeq0r6iukDIo0A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_1VVFIDJMEeq0r6iukDIo0A" name="" represents="_1VW6UDJMEeq0r6iukDIo0A"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_NCNgkDDhEeq0r6iukDIo0A" name="Component" isAbstract="true">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ZHXUgDDhEeq0r6iukDIo0A" name="operation"/>
   </packagedElement>
@@ -21,5 +26,19 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m0AqsDDhEeq0r6iukDIo0A" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_m0UMsDDhEeq0r6iukDIo0A" name="composite" type="_hSs-QDDhEeq0r6iukDIo0A" association="_mz-OcDDhEeq0r6iukDIo0A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iG5MQDJKEeq0r6iukDIo0A" name="Client"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKF3gDJKEeq0r6iukDIo0A" name="View" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n_FusDJKEeq0r6iukDIo0A" name="SimpleView"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pasKADJKEeq0r6iukDIo0A" name="CompositeView">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tX8CsjJKEeq0r6iukDIo0A" name="contains" type="_lKF3gDJKEeq0r6iukDIo0A" aggregation="composite" association="_tX60kDJKEeq0r6iukDIo0A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tX8pwDJKEeq0r6iukDIo0A" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tX60kDJKEeq0r6iukDIo0A" name="contains" memberEnd="_tX8CsjJKEeq0r6iukDIo0A _tX8pwTJKEeq0r6iukDIo0A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tX8CsDJKEeq0r6iukDIo0A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tX8CsTJKEeq0r6iukDIo0A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tX8pwTJKEeq0r6iukDIo0A" name="compositeview" type="_pasKADJKEeq0r6iukDIo0A" association="_tX60kDJKEeq0r6iukDIo0A"/>
   </packagedElement>
 </uml:Model>

@@ -276,4 +276,5 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_aQUkADrOEeqwbMg2_Ucctg" name="DataStore"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_f2rvkDrOEeqwbMg2_Ucctg" name="EJBContainer"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_-EP6YDrOEeqwbMg2_Ucctg" name="DependentEntity"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5aPc4DyQEequZJbid9Xvvw" client="_iG5MQDJKEeq0r6iukDIo0A" supplier="_NCNgkDDhEeq0r6iukDIo0A"/>
 </uml:Model>

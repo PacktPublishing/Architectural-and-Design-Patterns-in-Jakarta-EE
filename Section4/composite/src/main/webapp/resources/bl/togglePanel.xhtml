@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:cc="http://java.sun.com/jsf/composite"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>This content will not be displayed</title>
+</h:head>
+<h:body>
+
+	<cc:interface componentType="com.packtpub.jakarta.patterns.structural.TogglePanel">
+		<cc:attribute name="activeIndex" type="java.lang.Integer" />
+		<cc:attribute name="ajaxEnabled" type="java.lang.Boolean" />
+	</cc:interface>
+
+	<cc:implementation>
+		<h:form id="#{cc.formId}">
+			<h:panelGroup id="#{cc.buttonsPanelId}" layout="block" styleClass="tp-links">
+			</h:panelGroup>
+		</h:form>
+		<h:panelGroup id="#{cc.tabsPanelId}" layout="block">
+			<cc:insertChildren />
+		</h:panelGroup>
+	</cc:implementation>
+
+</h:body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:bl="http://java.sun.com/jsf/composite/bl">
+<h:head>
+	<title>Composite component example</title>
+</h:head>
+<h:body>
+	<bl:togglePanel activeIndex="#{clientBean.activeIndex}" ajaxEnabled="true">
+	
+		<ui:repeat var="item" value="#{clientBean.items}">
+		
+			<bl:togglePanelView linkText="#{item.linkText}">
+				<f:facet name="header">
+					<h:outputText value="#{item.headerText}" />
+				</f:facet>
+				<h:outputText value="#{item.contentText}" />
+			</bl:togglePanelView>
+			
+		</ui:repeat>
+		
+	</bl:togglePanel>
+</h:body>
+</html>

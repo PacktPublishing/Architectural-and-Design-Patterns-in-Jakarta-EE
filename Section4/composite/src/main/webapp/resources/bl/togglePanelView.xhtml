@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:cc="http://java.sun.com/jsf/composite"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>This content will not be displayed</title>
+</h:head>
+<h:body>
+	<cc:interface
+		componentType="com.packtpub.jakarta.patterns.structural.TogglePanelView">
+		<cc:facet name="header" />
+	</cc:interface>
+
+	<cc:implementation>
+		<h:panelGroup rendered="#{cc.active}" layout="block" styleClass="tp-section">
+			<h:panelGroup layout="block" styleClass="tp-header">
+				<cc:renderFacet name="header" />
+			</h:panelGroup>
+			<h:panelGroup layout="block">
+				<cc:insertChildren />
+			</h:panelGroup>
+		</h:panelGroup>
+	</cc:implementation>
+
+</h:body>
+</html>

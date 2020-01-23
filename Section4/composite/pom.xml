@@ -5,7 +5,7 @@
 	<groupId>com.packtpub.jakarta.patterns</groupId>
 	<artifactId>composite</artifactId>
 	<version>1.0</version>
-	<packaging>pom</packaging>
+	<packaging>war</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,6 +36,11 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.9</version>
 		</dependency>
-
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>8.0</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

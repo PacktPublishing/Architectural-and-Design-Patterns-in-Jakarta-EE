@@ -7,8 +7,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.component.UINamingContainer;
 import javax.faces.context.FacesContext;
 
-@FacesComponent("com.packtpub.jakarta.patterns.structural.TogglePanelView")
-public class TogglePanelView extends UINamingContainer {
+@FacesComponent("com.packtpub.jakarta.patterns.structural.TabView")
+public class TabView extends UINamingContainer {
 
 	enum PropertyKeys {
 		active, linkText
@@ -17,10 +17,10 @@ public class TogglePanelView extends UINamingContainer {
 	@Override
 	public void encodeBegin(FacesContext context) throws IOException {
 
-		TogglePanel togglePanel = getContainingTogglePanel(this);
-		int activeIndex = togglePanel.getActiveIndex();
+		TabComposite tabComposite = getComposite(this);
+		int activeIndex = tabComposite.getActiveIndex();
 
-		if (activeIndex == togglePanel.getTabIndexMap().get(this.getClientId())
+		if (activeIndex == tabComposite.getTabIndexMap().get(this.getClientId())
 				.intValue()) {
 			setActive(true);
 		} else {
@@ -30,16 +30,16 @@ public class TogglePanelView extends UINamingContainer {
 		super.encodeBegin(context);
 	}
 
-	private TogglePanel getContainingTogglePanel(UIComponent component) {
+	private TabComposite getComposite(UIComponent component) {
 		UIComponent parent = component.getParent();
 		if (parent == null) {
 			throw new RuntimeException(
-					"TogglePanelView was not used inside a TogglePanel!");
+					"TabView was not used inside a TabComposite!");
 		}
-		if (parent instanceof TogglePanel) {
-			return (TogglePanel) parent;
+		if (parent instanceof TabComposite) {
+			return (TabComposite) parent;
 		}
-		return getContainingTogglePanel(parent);
+		return getComposite(parent);
 	}
 
 	public boolean getActive() {
@@ -57,5 +57,4 @@ public class TogglePanelView extends UINamingContainer {
 	public void setLinkText(String linkText) {
 		getStateHelper().put(PropertyKeys.linkText, linkText);
 	}
-
 }

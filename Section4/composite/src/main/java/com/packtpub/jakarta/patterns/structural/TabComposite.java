@@ -20,9 +20,9 @@ import javax.faces.component.visit.VisitContext;
 import javax.faces.component.visit.VisitResult;
 import javax.faces.context.FacesContext;
 
-@FacesComponent("com.packtpub.jakarta.patterns.structural.TogglePanel")
-@ResourceDependency(library = "bl", name = "css/togglepanel.css", target = "head")
-public class TogglePanel extends UINamingContainer {
+@FacesComponent("com.packtpub.jakarta.patterns.structural.TabComposite")
+@ResourceDependency(library = "bl", name = "css/tabComposite.css", target = "head")
+public class TabComposite extends UINamingContainer {
 
 	private static final String FORM_ID = "tpForm";
 	private static final String BUTTONS_PANEL_ID = "tpBtns";
@@ -50,7 +50,7 @@ public class TogglePanel extends UINamingContainer {
 			public VisitResult visit(VisitContext visitContext,
 					UIComponent component) {
 
-				if (component instanceof TogglePanelView) {
+				if (component instanceof TabView) {
 
 					HtmlCommandLink button = (HtmlCommandLink) context
 							.getApplication().createComponent(
@@ -67,14 +67,14 @@ public class TogglePanel extends UINamingContainer {
 						ajax.setExecute(executes);
 						renders.add("@form");
 						renders.add(getSeparatorChar(context)
-								+ TogglePanel.this.findComponent(TABS_PANEL_ID)
+								+ TabComposite.this.findComponent(TABS_PANEL_ID)
 										.getClientId());
 						ajax.setRender(renders);
 						button.addClientBehavior(button.getDefaultEventName(),
 								ajax);
 					}
 
-					button.setValue(((TogglePanelView) component)
+					button.setValue(((TabView) component)
 							.getLinkText());
 					button.setActionExpression(context
 							.getApplication()

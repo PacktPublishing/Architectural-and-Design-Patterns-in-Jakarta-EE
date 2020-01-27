@@ -8,19 +8,19 @@
 	<title>Composite component example</title>
 </h:head>
 <h:body>
-	<bl:togglePanel activeIndex="#{clientBean.activeIndex}" ajaxEnabled="true">
+	<bl:tabComposite activeIndex="#{clientBean.activeIndex}" ajaxEnabled="true">
 	
 		<ui:repeat var="item" value="#{clientBean.items}">
 		
-			<bl:togglePanelView linkText="#{item.linkText}">
+			<bl:tabView linkText="#{item.linkText}">
 				<f:facet name="header">
 					<h:outputText value="#{item.headerText}" />
 				</f:facet>
 				<h:outputText value="#{item.contentText}" />
-			</bl:togglePanelView>
+			</bl:tabView>
 			
 		</ui:repeat>
 		
-	</bl:togglePanel>
+	</bl:tabComposite>
 </h:body>
 </html>

@@ -8,22 +8,22 @@
 	<title>Composite component example</title>
 </h:head>
 <h:body>
-	<bl:togglePanel activeIndex="#{clientBean.activeIndex}" ajaxEnabled="true">
+	<bl:tabComposite activeIndex="#{clientBean.activeIndex}" ajaxEnabled="true">
 	
-		<bl:togglePanelView linkText="Section 1">
+		<bl:tabView linkText="Section 1">
 			<f:facet name="header">
 				<h:outputText value="Header - Section 1" />
 			</f:facet>
 			<h:outputText value="This is the content from section one" />
-		</bl:togglePanelView>
+		</bl:tabView>
 		
-		<bl:togglePanelView linkText="Section 2">
+		<bl:tabView linkText="Section 2">
 			<f:facet name="header">
 				<h:outputText value="Header - Section 2" />
 			</f:facet>
 			<h:outputText value="This is the content from section two" />
-		</bl:togglePanelView>
+		</bl:tabView>
 		
-	</bl:togglePanel>
+	</bl:tabComposite>
 </h:body>
 </html>

@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:cc="http://java.sun.com/jsf/composite"
+	xmlns:composite="http://java.sun.com/jsf/composite"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core">
@@ -8,20 +8,20 @@
 </h:head>
 <h:body>
 
-	<cc:interface componentType="com.packtpub.jakarta.patterns.structural.TabComposite">
-		<cc:attribute name="activeIndex" type="java.lang.Integer" />
-		<cc:attribute name="ajaxEnabled" type="java.lang.Boolean" />
-	</cc:interface>
+	<composite:interface componentType="com.packtpub.jakarta.patterns.structural.TabComposite">
+		<composite:attribute name="activeIndex" type="java.lang.Integer" />
+		<composite:attribute name="ajaxEnabled" type="java.lang.Boolean" />
+	</composite:interface>
 
-	<cc:implementation>
+	<composite:implementation>
 		<h:form id="#{cc.formId}">
 			<h:panelGroup id="#{cc.buttonsPanelId}" layout="block" styleClass="tp-links">
 			</h:panelGroup>
 		</h:form>
 		<h:panelGroup id="#{cc.tabsPanelId}" layout="block">
-			<cc:insertChildren />
+			<composite:insertChildren />
 		</h:panelGroup>
-	</cc:implementation>
+	</composite:implementation>
 
 </h:body>
 </html>

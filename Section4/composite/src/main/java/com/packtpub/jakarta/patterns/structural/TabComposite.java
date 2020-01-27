@@ -21,7 +21,7 @@ import javax.faces.component.visit.VisitResult;
 import javax.faces.context.FacesContext;
 
 @FacesComponent("com.packtpub.jakarta.patterns.structural.TabComposite")
-@ResourceDependency(library = "bl", name = "css/tabComposite.css", target = "head")
+@ResourceDependency(library = "bl", name = "css/tabpanel.css", target = "head")
 public class TabComposite extends UINamingContainer {
 
 	private static final String FORM_ID = "tpForm";

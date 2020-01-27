@@ -22,19 +22,19 @@ public class ClientBean implements Serializable {
 		activeIndex = 2;
 		items = new ArrayList<>();
 		Item item = new Item();
-		item.setLinkText("Section 1");
-		item.setHeaderText("Header - Section 1");
-		item.setContentText("This is the content from section one");
+		item.setLinkText("Tab 1");
+		item.setHeaderText("Header - Tab 1");
+		item.setContentText("This is the content from Tab one");
 		items.add(item);
 		item = new Item();
-		item.setLinkText("Section 2");
-		item.setHeaderText("Header - Section 2");
-		item.setContentText("This is the content from section two");
+		item.setLinkText("Tab 2");
+		item.setHeaderText("Header - Tab 2");
+		item.setContentText("This is the content from Tab two");
 		items.add(item);
 		item = new Item();
-		item.setLinkText("Section 3");
-		item.setHeaderText("Header - Section 3");
-		item.setContentText("This is the content from section three");
+		item.setLinkText("Tab 3");
+		item.setHeaderText("Header - Tab 3");
+		item.setContentText("This is the content from Tab three");
 		items.add(item);
 	}
 

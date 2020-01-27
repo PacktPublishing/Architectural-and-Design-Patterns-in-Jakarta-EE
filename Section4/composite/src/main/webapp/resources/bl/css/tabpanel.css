@@ -4,7 +4,7 @@
 	margin-bottom: 5px;
 }
 .tp-links a{
-	color: #168816;
+	color: #FF6600;
 	font-weight: bold;
 	text-decoration: none;
 	margin-left: 5px;
@@ -13,7 +13,7 @@
 .tp-links a:hover{
 	text-decoration: underline;
 }
-.tp-section{
+.tp-Tab{
 	font-family: Arial;
 	border-style: dashed;
 	border-width: 1px;

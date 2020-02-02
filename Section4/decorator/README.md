@@ -1,3 +1,3 @@
-# Adapter Pattern
+# Decorator Pattern
 
-- [Resource Adapter Traffic Example](https://github.com/eclipse-ee4j/jakartaee-tutorial-examples/tree/master/connectors/traffic)
+- [CDI Decorator Example](https://github.com/eclipse-ee4j/jakartaee-tutorial-examples/tree/master/cdi/decorators)

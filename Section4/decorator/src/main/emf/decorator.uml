@@ -14,21 +14,40 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_nFy8MtKEEemFM_W8b2cnyA" name="target" type="_Z1BpsNKEEemFM_W8b2cnyA" association="_nFxHANKEEemFM_W8b2cnyA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_nFzjQNKEEemFM_W8b2cnyA" name="client" type="_YJf8ANKEEemFM_W8b2cnyA" association="_nFxHANKEEemFM_W8b2cnyA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Il8SENKFEemFM_W8b2cnyA" name="Adapter">
-    <generalization xmi:type="uml:Generalization" xmi:id="_7MtGQAWsEeqjCs74q5Zrbg" general="_bGFzgNKFEemFM_W8b2cnyA"/>
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_M-0W0NKFEemFM_W8b2cnyA" client="_Il8SENKFEemFM_W8b2cnyA" supplier="_Z1BpsNKEEemFM_W8b2cnyA" contract="_Z1BpsNKEEemFM_W8b2cnyA"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_UdERENKFEemFM_W8b2cnyA" name="operation1"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_t-bsEEYAEeqfHpz_K_J8dw" name="Decorator Sequence">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fPeF0EYXEeqfHpz_K_J8dw" name="" type="_YJf8ANKEEemFM_W8b2cnyA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jEDKsEYXEeqfHpz_K_J8dw" name="" type="_TumVkEYVEeqfHpz_K_J8dw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jnE_QEYXEeqfHpz_K_J8dw" name="" type="_sbhiUEYVEeqfHpz_K_J8dw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kntV0EYXEeqfHpz_K_J8dw" name="" type="_Po77AEYFEeqfHpz_K_J8dw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_fPdewEYXEeqfHpz_K_J8dw" name="" represents="_fPeF0EYXEeqfHpz_K_J8dw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jECjoEYXEeqfHpz_K_J8dw" name="" represents="_jEDKsEYXEeqfHpz_K_J8dw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jnEYMEYXEeqfHpz_K_J8dw" name="" represents="_jnE_QEYXEeqfHpz_K_J8dw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_knsuwEYXEeqfHpz_K_J8dw" name="" represents="_kntV0EYXEeqfHpz_K_J8dw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_bGFzgNKFEemFM_W8b2cnyA" name="Adaptee">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_g3WAcNKFEemFM_W8b2cnyA" name="specificOperation"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Po77AEYFEeqfHpz_K_J8dw" name="Component1">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_in7zQEYTEeqfHpz_K_J8dw" client="_Po77AEYFEeqfHpz_K_J8dw" supplier="_Z1BpsNKEEemFM_W8b2cnyA" contract="_Z1BpsNKEEemFM_W8b2cnyA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_y1OiUNKFEemFM_W8b2cnyA" memberEnd="_y1PJYtKFEemFM_W8b2cnyA _y1PwcNKFEemFM_W8b2cnyA" navigableOwnedEnd="_y1PJYtKFEemFM_W8b2cnyA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y1PJYNKFEemFM_W8b2cnyA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y1PJYdKFEemFM_W8b2cnyA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_utVe0EYTEeqfHpz_K_J8dw" client="_YJf8ANKEEemFM_W8b2cnyA" supplier="_Z1BpsNKEEemFM_W8b2cnyA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zXW98EYTEeqfHpz_K_J8dw" name="Decorator" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HyPRQEYVEeqfHpz_K_J8dw" name="component" type="_Z1BpsNKEEemFM_W8b2cnyA" association="_HyIjkEYVEeqfHpz_K_J8dw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HySUkEYVEeqfHpz_K_J8dw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HySUkUYVEeqfHpz_K_J8dw" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6SwCwEYTEeqfHpz_K_J8dw" client="_zXW98EYTEeqfHpz_K_J8dw" supplier="_Z1BpsNKEEemFM_W8b2cnyA" contract="_Z1BpsNKEEemFM_W8b2cnyA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ChRG4EYVEeqfHpz_K_J8dw" name="operation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HyIjkEYVEeqfHpz_K_J8dw" memberEnd="_HyPRQEYVEeqfHpz_K_J8dw _HySUkkYVEeqfHpz_K_J8dw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HyKYwEYVEeqfHpz_K_J8dw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HyKYwUYVEeqfHpz_K_J8dw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_y1PJYtKFEemFM_W8b2cnyA" name="adaptee" type="_bGFzgNKFEemFM_W8b2cnyA" association="_y1OiUNKFEemFM_W8b2cnyA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_y1PwcNKFEemFM_W8b2cnyA" name="adapter" type="_Il8SENKFEemFM_W8b2cnyA" association="_y1OiUNKFEemFM_W8b2cnyA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HySUkkYVEeqfHpz_K_J8dw" name="decorator" type="_zXW98EYTEeqfHpz_K_J8dw" association="_HyIjkEYVEeqfHpz_K_J8dw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_t-bsEEYAEeqfHpz_K_J8dw" name="Decorator Sequence"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Po77AEYFEeqfHpz_K_J8dw" name="Class9"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TumVkEYVEeqfHpz_K_J8dw" name="Decorator1">
+    <generalization xmi:type="uml:Generalization" xmi:id="_aJTIIEYVEeqfHpz_K_J8dw" general="_zXW98EYTEeqfHpz_K_J8dw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mxYC8EYVEeqfHpz_K_J8dw" name="addBehavior"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sbhiUEYVEeqfHpz_K_J8dw" name="Decorator2">
+    <generalization xmi:type="uml:Generalization" xmi:id="_sbhiUUYVEeqfHpz_K_J8dw" general="_zXW98EYTEeqfHpz_K_J8dw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sbhiUkYVEeqfHpz_K_J8dw" name="addBehavior"/>
+  </packagedElement>
 </uml:Model>

@@ -1,5 +1,5 @@
-# Software-Architecture-Design-Patterns-in-Jakarta-EE
-Software Architecture Design Patterns in Jakarta EE, published by Packt
+# Architectural-and-Design-Patterns-in-Jakarta-EE
+Architectural and Design Patterns in Jakarta EE, published by Packt
 
 ## About the Video Course
 Java Enterprise developers often come across the similar problems independent of vertical domains. This leads us to find a solution for the same problem every time, and we often "reinvent the wheel". Wouldn't it be great to have a set of such common problems and proven solutions? 
